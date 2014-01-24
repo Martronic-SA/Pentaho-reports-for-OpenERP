@@ -21,6 +21,7 @@
 				<field name='model' position='after'>
 					<field name="pentaho_report_model_id" attrs="{'invisible': [('is_pentaho_report', '!=', True)], 'required': [('is_pentaho_report', '=', True)]}"/>
 					<field name='linked_menu_id' attrs="{'invisible': [('is_pentaho_report', '!=', True)]}"/>
+					<field name='linked_menu_lang' attrs="{'invisible': [('is_pentaho_report', '!=', True)]}"/>
 				</field>
 				<field name='report_file' position='after'>
 					<field name="pentaho_report_output_type" attrs="{'invisible': [('is_pentaho_report', '!=', True)], 'required': [('is_pentaho_report', '=', True)]}"/>
