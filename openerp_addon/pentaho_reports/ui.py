@@ -31,6 +31,7 @@ class report_xml(orm.Model):
                 # a prpt file needs to be loaded - normally it is loaded by the client interface
                 # In this case, the filename should be specified with a module path.
                 'pentaho_load_file': fields.boolean('Load prpt file from filename'),
+                'pentaho_report_lang': fields.char('Lang', size=256, help="Indicate the lang to use for this report, use o as object to evaluate\neg: o.partner_id.lang\nor\n'fr_FR'\ndefault use user's lang"),
                 }
 
     def onchange_is_pentaho(self, cr, uid, ids, is_pentaho_report, context=None):
